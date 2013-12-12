@@ -108,8 +108,8 @@ public class TwoValuesHashMap<K, V1, V2> extends HashMap<K, TwoValuesHashMap.Two
         public int hashCode() {
             final int PRIME = 37;
             int result = 1;
-            result = PRIME * result + ((valueOne == null) ? 0 : valueOne.hashCode());
-            result = PRIME * result + ((valueTwo == null) ? 0 : valueTwo.hashCode());
+            result = PRIME * result + ((getValueOne == null) ? 0 : getValueOne.hashCode());
+            result = PRIME * result + ((getValueTwo == null) ? 0 : getValueTwo.hashCode());
             return result;
         }
     }
